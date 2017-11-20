@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/natplusultra/BarterApp.git"
+    "url": "git+https://github.com/chinapalace/Baz-Market.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/natplusultra/BarterApp/issues"
   },
-  "homepage": "https://github.com/natplusultra/BarterApp#readme",
+  "homepage": "https://github.com/chinapalace/Baz-Market/#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.0",
