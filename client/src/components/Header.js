@@ -15,9 +15,14 @@ class Header extends Component {
         );
       default:
         return (
-          <li>
-            <a href="/api/logout">Logout</a>
-          </li>
+          <ul>
+            <li>
+              <Link to={'/tasks'}>{this.props.auth.name}</Link>
+            </li>
+            <li>
+              <a href="/api/logout">Logout</a>
+            </li>
+          </ul>
         );
     }
   }
@@ -26,10 +31,7 @@ class Header extends Component {
       <div>
         <nav>
           <div className="nav-wrapper">
-            <Link
-              to={this.props.auth ? '/tasks' : '/'}
-              className="left brand-logo"
-            >
+            <Link to={this.props.auth ? '/' : '/'} className="left brand-logo">
               Baz
             </Link>
             <ul className="right">{this.renderContent()}</ul>
